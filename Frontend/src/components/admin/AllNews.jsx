@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react'
 import Navbar from '../landingpage/Navbar'
+import { API_URL } from '../../api';
 import axios from 'axios'
 import Swal from 'sweetalert2'
 const AllNews = () => {
@@ -10,13 +11,13 @@ const AllNews = () => {
   }, [])
 
   const fetchData = async () => {
-    const response = await axios.get(`http://localhost:9000/api/admin-all-list`)
+    const response = await axios.get(`${API_URL}/admin-all-list`)
     if (response?.data?.code == 200) {
       setNewsList(response?.data?.data)
     }
   }
   const handleApproval = async (id, status) => {
-    const response = await axios.put('http://localhost:9000/api/admin-news-approved', { _id: id, isApproved: !status });
+    const response = await axios.put(`${API_URL}/admin-news-approved`, { _id: id, isApproved: !status });
     if (response?.data?.code == 200) {
       Swal.fire({
         title: "Approval",
@@ -43,7 +44,7 @@ const AllNews = () => {
       confirmButtonText: "Yes, delete it!"
     }).then(async (result) => {
       if (result.isConfirmed) {
-        const response = await axios.post('http://localhost:9000/api/delete-news', { _id });
+        const response = await axios.post(`${API_URL}/delete-news`, { _id });
         if (response?.data?.code == 200) {
           Swal.fire({
             title: "News Delete",

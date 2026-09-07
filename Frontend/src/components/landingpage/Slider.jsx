@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { IoNewspaperSharp } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import { API_URL } from '../../api';
 import {
     Navbar as BSNavbar, Nav, NavDropdown, Container,
     Carousel, Card, Button, Row, Col
@@ -54,7 +55,7 @@ const Slider = () => {
     }, [])
 
     const fetchData = async () => {
-        const response = await axios.get('http://localhost:9000/api/top-ten-news');
+        const response = await axios.get(`${API_URL}/top-ten-news`);
         if (response?.data?.code == 200) {
             setData(response?.data?.data)
         }

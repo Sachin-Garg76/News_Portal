@@ -1,5 +1,6 @@
 import { HiPhoto } from "react-icons/hi2";
 import { FaSearch } from "react-icons/fa";
+import { API_URL } from '../../api';
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -15,7 +16,7 @@ const ImageGaralley = () => {
         }, [])
 
         const fetchData = async () => {
-            const response = await axios.get('http://localhost:9000/api/top-city');
+            const response = await axios.get(`${API_URL}/top-city`);
             if (response?.data?.code == 200) {
                 setData(response?.data?.data)
             }

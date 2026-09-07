@@ -4,6 +4,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { API_URL } from '../../api';
 import { useLocation } from 'react-router-dom';
 import { FaUser, FaEnvelope, FaPhone, FaComment, FaMapMarkerAlt } from 'react-icons/fa';
 import Navbar from './Navbar';
@@ -38,7 +39,7 @@ const ContactUs = () => {
   });
 
   const handleContact =async (data) => {
-   const response=await axios.post('http://localhost:9000/api/add-contact-us',data);
+   const response = await axios.post(`${API_URL}/add-contact-us`, data);
    if(response?.data?.code==200){
      Swal.fire({
       title:"Contact US",

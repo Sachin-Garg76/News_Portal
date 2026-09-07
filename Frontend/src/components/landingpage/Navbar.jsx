@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import {
     Navbar as BSNavbar, Nav, Container,
 } from 'react-bootstrap';
+
 import {
   FaHome, FaInfoCircle, FaNewspaper,
   FaAddressBook, FaSignInAlt, FaUserCircle,
@@ -11,7 +12,7 @@ import {
 import { GiNewspaper } from "react-icons/gi";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useEffect, useState } from 'react';
+import React, { useEffect,useState } from 'react';
 
 const Navbar = () => {
     const nav=useNavigate()

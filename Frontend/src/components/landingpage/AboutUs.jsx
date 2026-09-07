@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 import { FaInfoCircle } from "react-icons/fa";
 import {useLocation} from 'react-router-dom';
-
+import React from 'react';
 const AboutUs = () => {
     const location = useLocation();
     // const style = {

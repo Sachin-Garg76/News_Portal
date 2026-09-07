@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from '../landingpage/Navbar';
 import { FaUser, FaEnvelope, FaPhone, FaLock, FaImage } from "react-icons/fa";
 import { useLocation, useNavigate } from 'react-router-dom'
+import { API_URL } from '../../api';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -53,7 +54,7 @@ const EditProfile = () => {
       })
       return;
     }
-    const response = await axios.put('http://localhost:9000/api/user-update', formData, {
+    const response = await axios.put(`${API_URL}/user-update`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

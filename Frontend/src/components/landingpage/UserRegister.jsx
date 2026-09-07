@@ -6,6 +6,7 @@ import { useLocation,useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { API_URL } from '../../api';
 import axios from "axios";
 import Swal from "sweetalert2";
 const USerSchema = yup
@@ -45,7 +46,7 @@ const UserRegister = () => {
       })
        return ;
      }
-    const response = await axios.post('http://localhost:9000/api/user-register', formData, {
+    const response = await axios.post(`${API_URL}/user-register`, formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }

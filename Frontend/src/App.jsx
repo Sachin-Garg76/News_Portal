@@ -1,18 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import { useLocation, Routes, Route } from 'react-router-dom';
+import React from 'react'
 import { useEffect, useState } from 'react';
 import './App.css';
 // landing page component 
-import Home from './components/landingPage/Home';
-import SignIn from './components/landingPage/SignIn';
+import Home from './components/landingpage/Home';
+import SignIn from './components/landingpage/SignIn';
 import AboutUs from './components/landingPage/AboutUs';
 import NewsDetails from './components/landingpage/NewsDetail';
-import NewsCategory from './components/landingPage/NewsCategory';
-import ImageGaralley from './components/landingPage/ImageGaralley';
-import Latestvideos from './components/landingPage/Latestvideos';
-import ContactUs from './components/landingPage/ContactUs';
-import UserRegister from './components/landingPage/UserRegister';
+import NewsCategory from './components/landingpage/NewsCategory';
+import ImageGaralley from './components/landingpage/ImageGaralley';
+import Latestvideos from './components/landingpage/Latestvideos';
+import ContactUs from './components/landingpage/ContactUs';
+import UserRegister from './components/landingpage/UserRegister';
 import Footer from './components/landingPage/Footer';
 import TopNews from './components/landingPage/TopNews';
 // user component 

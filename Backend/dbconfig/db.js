@@ -1,8 +1,13 @@
 import mongoose from 'mongoose';
-export const dbconnect=async()=>{
-   const com=await mongoose.connect("mongodb://localhost:27017/NewsPortal");
-    if(com){
-        console.log('dbconnected');
-        
+
+export const dbconnect = async () => {
+    try {
+        const com = await mongoose.connect(process.env.MONGO_URI);
+
+        if (com) {
+            console.log('DB connected');
+        }
+    } catch (error) {
+        console.error('Database connection failed:', error.message);
     }
-}
+};

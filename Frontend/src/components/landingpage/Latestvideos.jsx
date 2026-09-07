@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
+import { API_URL } from '../../api';
 import { useLocation,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 function LatestVideos() {
@@ -12,7 +13,7 @@ function LatestVideos() {
   }, [])
 
   const fetchData = async () => {
-    const response = await axios.get('http://localhost:9000/api/top-video');
+    const response = await axios.get(`${API_URL}/top-video`);
     if (response?.data?.code == 200) {
       setData(response?.data?.data)
     }
