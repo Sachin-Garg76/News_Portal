@@ -43,7 +43,7 @@ const TopNavbar = () => {
 
                 {/* Logo Section */}
                 <div style={style.logoSection}>
-                    <img src="public/LandingPage/logo.jpg" alt="Logo" style={style.imgLogo} />
+                    <img src="/LandingPage/logo.jpg" alt="Logo" style={style.imgLogo} />
                 </div>
    </>
   )
