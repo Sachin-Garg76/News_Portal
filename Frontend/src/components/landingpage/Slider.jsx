@@ -72,13 +72,13 @@ const Slider = () => {
                         <div id="carouselExample" className="carousel slide" data-bs-ride='carousel'>
                             <div className="carousel-inner">
                                 <div className="carousel-item active" data-bs-interval='100'>
-                                    <img src="../../../public/LandingPage/jason-briscoe-amLfrL8LGls-unsplash.jpg" className="d-block w-100 img-fluid sliderimg" alt="..." />
+                                    <img src="/LandingPage/jason-briscoe-amLfrL8LGls-unsplash.jpg" className="d-block w-100 img-fluid sliderimg" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="../../../public/LandingPage/govt schmea.jpeg" className="d-block w-100 img-fluid sliderimg" alt="..." />
+                                    <img src="/LandingPage/govt schmea.jpeg" className="d-block w-100 img-fluid sliderimg" alt="..." />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src="../../../public/LandingPage/zoshua-colah-N-q7NqNEv84-unsplash.jpg" className="d-block w-100 img-fluid sliderimg" alt="..." />
+                                    <img src="/LandingPage/zoshua-colah-N-q7NqNEv84-unsplash.jpg" className="d-block w-100 img-fluid sliderimg" alt="..." />
                                 </div>
                             </div>
                             <button
