@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Navbar from './components/landingPage/Navbar';
+import Navbar from './components/landingpage/Navbar';
 const NotFound = () => {
     const navigate = useNavigate();
     useEffect(()=>{
