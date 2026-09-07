@@ -26,7 +26,7 @@ import EditProfile from './components/admin/EditProfile';
 import AllNews from './components/admin/AllNews';
 import AdminContactUsList from './components/admin/AdminContactUsList';
 // main component
-import NotFound from './Notfound';
+import NotFound from './NotFound';
 
 function App() {
  const location=useLocation()
