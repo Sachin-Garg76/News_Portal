@@ -49,7 +49,7 @@ const TopNews = () => {
                                     </span>
                                 </div>
                             </div>
-        p                    </a>
+                           </a>
                         </div>
                         {/* /Top News Card End */}
                         {/* /Top News Card Start */}
