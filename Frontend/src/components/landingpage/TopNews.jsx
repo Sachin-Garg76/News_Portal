@@ -12,7 +12,7 @@ const TopNews = () => {
                         <div className="col-sm-4 topnewscard">
                             <a href='#'>
                             <div className="card mx-auto shadow-lg border border-0" >
-                                <img src="public\LandingPage\modi.jpeg" className="card-img-top img-fluid topnewsimg" alt="..." />
+                                <img src="\LandingPage\modi.jpeg" className="card-img-top img-fluid topnewsimg" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title text-mycolor">India on way to 3rd biggest economy</h5>
                                     <p className="card-text">
@@ -34,7 +34,7 @@ const TopNews = () => {
                         <div className="col-sm-4 topnewscard">
                             <a href='#'>
                             <div className="card mx-auto shadow-lg border border-0" >
-                                <img src="public\LandingPage\donaland.jpeg" className="card-img-top img-fluid topnewsimg" alt="..." />
+                                <img src="\LandingPage\donaland.jpeg" className="card-img-top img-fluid topnewsimg" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title text-mycolor">U.S. deploying nuclear</h5>
                                     <p className="card-text">
@@ -56,7 +56,7 @@ const TopNews = () => {
                         <div className="col-sm-4 topnewscard">
                             <a href='#'>
                             <div className="card mx-auto shadow-lg border border-0" >
-                                <img src="public\LandingPage\capgemini.jpeg" className="card-img-top img-fluid topnewsimg" alt="..." />
+                                <img src="\LandingPage\capgemini.jpeg" className="card-img-top img-fluid topnewsimg" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title text-mycolor">Capgemini</h5>
                                     <p className="card-text">
